@@ -1,3 +1,19 @@
+/*@font-face{
+  font-family: pangMen;
+  src: url(/fonts/pangmen-title.ttf);
+}*/
+@font-face{
+  font-family: pangMen;
+  src: url(/fonts/pangmen-cu.ttf);
+}
+/*@font-face{
+  font-family: openFont;
+  src: url(/fonts/ITCKRIST.TTF);
+}*/
+@font-face{
+  font-family:openFont;
+  src: url(/fonts/HARLOWSI.TTF);
+}
 .left/*左外边距*/
 {
     margin-left: 2px;
@@ -20,7 +36,7 @@ header.mainBar {
 
 }
 #footer{
-    color: white;
+    color: rgb(187, 59, 59);
     background-color:gray;
     border:0px;
     font-size: 120%;
@@ -33,13 +49,19 @@ header.mainBar {
     
    
 }
+#title{
+  font-size: 1300%;
+  color: #FFD33C;
+  margin-top: 100px;
+  margin-left: 200px;
+  font-family: pangMen;
+}
 
-
-#container{
+#openContainer{
     font-size: 60%;
     text-align: center;
-    margin-top: 30%;
-    margin-left: 44%;
+    margin-top: 4%;
+    margin-left: 42.5%;
   }
   
   
@@ -53,22 +75,19 @@ header.mainBar {
   }
 
   p:nth-child(1) a{
-    color: yellow;     
-    font-family: Arial, Helvetica, sans-serif;
+    color: gray;     
+    font-family: openFont;
   }
   p:nth-child(1) a:hover{
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate;
+    -webkit-animation: neon1 1s ease-in-out infinite alternate;
+    -moz-animation: neon1 1s ease-in-out infinite alternate;
+    animation: neon1 1s ease-in-out infinite alternate;
   }
 
   p a:hover{
     color: white;  
     }
     
-  
-  
- 
   @-webkit-keyframes neon1 {
     from {
       text-shadow: 0 0 10px #fff,
@@ -140,8 +159,6 @@ header.mainBar {
     }
   }
   
-  
-  /*REEEEEEEEEEESPONSIVE*/
   @media (max-width: 650px) {
     
     #container{
