@@ -13,8 +13,70 @@
             alert("You entered a valid password: " + form.registerPassword.value);
             return true;
         }
+/*       function checkPwd(input) {
 
+            var pwd = document.getElementById("pwd").value;
+            // alert(pwd);
+            if (input.value != pwd) {
+                input.setCustomValidity("两次密码输入不一致！");
+                document.getElementById("confirm-pwd").innerHTML = "两次密码输入不一致！";
+            } else {
+                input.setCustomValidity('');
+            }
+        }
 
+        function checkClass(input) {
+            var classNum = input.value.substring(input.value.length - 4);
+            var reg = /^[0-9]+$/;
+            if (!reg.test(classNum)) {
+                input.setCustomValidity("这不是一个班级名称");
+            } else {
+                input.setCustomValidity('');
+
+            }
+        }
+
+        function checkAccount(input) {
+            var acc = input.value;
+            var reg = /^[\u4e00-\u9fa5]{0,}$/;
+            var fileUrl = "../users/" + acc + "/userconfig.txt";
+            // alert(fileUrl);
+            if (reg.test(acc)) {
+                input.setCustomValidity("姓名不可用！");
+            } else {
+                var fso = new XMLHttpRequest();
+                fso.open("GET", fileUrl, false);
+                fso.send();
+                if (fso.readyState == 4) {
+                    if (fso.status == 200) {
+                        input.setCustomValidity("姓名已存在！");
+                        document.getElementById("accountFeedBack").innerHTML = "姓名已存在！";
+                    } //url存在  
+                    else if (fso.status == 404) {
+                        input.setCustomValidity('');
+                    } else {
+                        input.setCustomValidity("未知错误！");
+                        document.getElementById("accountFeedBack").innerHTML = "未知错误！";
+                    }; //其他状态  
+                }
+            }
+        }
+
+        function checkImg(input) {
+            // alert("!");
+            var fileType = input.value.substring(input.value.lastIndexOf("."), input.value.length);
+            var fileSize = input.files[0].size;
+            // alert(fileType);
+            if (fileType != ".jpg" && fileType != ".jpeg") {
+                input.setCustomValidity("请选择一个jpg文件！");
+            } else if (fileSize > 500000) {
+                input.setCustomValidity("文件过大！请选择一个500kb内的文件");
+                document.getElementById("AvatarFeedback").innerHTML = "文件过大！请选择一个500kb内的文件！";
+            } else {
+                input.setCustomValidity('');
+            }
+        }
+*/
 //获取上传按钮
 var input1 = document.getElementById("upload");
  if (typeof FileReader === 'undefined') {

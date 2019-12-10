@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="CSS/registerCSS.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="/CSS/registerCSS.css" media="screen" type="text/css"/>
+    <!--<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+
     <title>用户注册</title>
     
 </head>
-<body background="image\图片1.png" style="background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;">                    
+<body background="/image/图片1.png" style="background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;">                    
      <div class="register-box transparent">
-         <!--<form action=""  method="post" onsubmit="return checkForm(this);">-->
-         <form action="register.asp" method="POST">
+         <form action="/register.asp" method="POST" onsubmit="return checkForm(this);">
              <table frame="box" border="0">                                                                                                                                                   
                  <th class="title-box">
                      用 户 注 册
@@ -24,15 +28,15 @@
                          </div>
                      </td>
                      <td>
-                         <label class="registerNameBox" ><span class="require">*</span> 姓名</label>
+                         <label class="registerNameBox" ><span class="require">*</span> 姓名 :</label>
                      </td>
                      <td style="text-align: left;margin-top: 1px;">
-                         <input id="registerForm_01" type="text" name="registerName" placeholder="请输入您的姓名">
+                         <input id="registerForm_01" type="text" name="registerName" placeholder="请输入您的姓名" required/>
                      </td>
                  </tr>
                  <tr>
                      <td>
-                         <label class="registerNameBox"><span class="require">*</span> 账号</label>
+                         <label class="registerNameBox"><span class="require">*</span> 账号 :</label>
                      </td>
                      <td style="text-align: left;">
                          <input id="registerForm_01" type="text" name="registerNumber" value="quchenhui" placeholder="请输入您的账号，默认为学号">
@@ -41,7 +45,7 @@
              
                  <tr>
                      <td>
-                         <label class="registerNameBox"><span class="require">*</span> 密码</label>
+                         <label class="registerNameBox"><span class="require">*</span> 密码 :</label>
                      </td>
                      <td style="text-align: left;">
                          <input id="password" type="password" name="registerPassword" placeholder="请输入您的密码">
@@ -51,7 +55,7 @@
                      <td>
                      </td>
                      <td>
-                         <label class="registerNameBox"><span class="require">*</span> 密码确认</label><span id="concentration"></span>
+                         <label class="registerNameBox"><span class="require">*</span> 密码确认 :</label><span id="concentration"></span>
                      </td>
                      <td style="text-align: left;">
                          <input id="passwordConfirm" type="password" name="registerPasswordConfirm" placeholder="请再次输入您的密码">
@@ -61,7 +65,7 @@
                      <td>
                      </td>
                      <td>
-                         <label class="registerNameBox"><span class="require">*</span> 性别</label>
+                         <label class="registerNameBox"><span class="require">*</span> 性别 :</label>
                      </td>
                      <td style="text-align: left;">
                          <input type="radio" name="registerGender" value="女" checked="checked" />女
@@ -71,19 +75,19 @@
                  <tr>
                      <td></td>
                      <td>
-                         <label class="registerNameBox"><span class="require">*</span> 爱好</label>
+                         <label class="registerNameBox"><span class="require">*</span> 爱好 :</label>
                      </td>
                      <td style="text-align: left;">
-                       <input type="checkbox" name="registerLove" value="唱歌">唱歌&nbsp;&nbsp;
-                       <input type="checkbox" name="registerLove" value="跳舞">跳舞&nbsp;&nbsp;
-                       <input type="checkbox" name="registerLove" value="爬山">爬山&nbsp;&nbsp;
+                       <input type="checkbox" name="registerLove" value="唱歌">唱歌&nbsp;
+                       <input type="checkbox" name="registerLove" value="跳舞">跳舞&nbsp;
+                       <input type="checkbox" name="registerLove" value="爬山">爬山&nbsp;
                        <input type="checkbox" name="registerLove" value="玩游戏">玩游戏
                      </td>
                  </tr>
                  <tr>
                      <td></td>
                      <td>
-                         <label class="registerNameBox"><span class="require">*</span> 专业班级</label>
+                         <label class="registerNameBox"><span class="require">*</span> 专业班级 :</label>
                      </td>
                      <td style="text-align: left;">
                          <select id="registerForm_02" name="registerClass">
@@ -96,7 +100,7 @@
                  <tr>
                      <td></td>
                      <td>
-                         <label class="registerNameBox"><span class="require">*</span> 文件上传</label>
+                         <label class="registerNameBox"><span class="require">*</span> 文件上传 :</label>
                      </td>
                      <td style="text-align: left;">
                          <input id="registerForm_01" type="file" name="registerFileUpload">
@@ -105,7 +109,7 @@
                  <tr>
                      <td></td>
                      <td>
-                         <label class="registerNameBox"><span class="require">*</span> 个性签名</label>
+                         <label class="registerNameBox"><span class="require">*</span> 个性签名 :</label>
                      </td>
                      <td style="text-align-last: left;">
                          <textarea style="border: 2px solid #ccc;border-radius: 5px;" name="registerTextarea" value="" rows="3" cols="26"></textarea>
