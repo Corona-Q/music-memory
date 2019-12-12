@@ -1,0 +1,69 @@
+@font-face{
+  font-family: pangMen;
+  src: url(../fonts/pangmen-title.ttf);
+}
+/*@font-face{
+    font-family: pangMen;
+    src: url(../fonts/pangmen-cu.ttf);
+  }*/
+  /*@font-face{
+    font-family: openFont;
+    src: url(../fonts/ITCKRIST.TTF);
+  }*/
+  @font-face{
+    font-family:openFont;
+    src: url(../fonts/HARLOWSI.TTF);
+  }
+#title{
+    font-family: pangMen;
+    font-size: 695%;
+    margin-left: 52%;
+    margin-top: -13%;
+    color: #ffa518;
+}
+.background{
+    
+    background-image: url(../image/second.jpg);
+    background-repeat:no-repeat;/*图片适应窗口大小，这里设置的是不进行平铺*/
+    background-origin: border-box;/*从边框区域显示*/
+    background-position: 5%;
+    
+}
+header.main-bar {
+  position: absolute;
+  vertical-align: middle;
+  /* text-align: right; */
+  /* background-color: rgba(147, 82, 204, 0.747); */
+  padding-top: 1%;
+  /* padding-left: 40%; */
+  width: 55ex;
+  height: 4ex;
+  /* align-items: flex-end; */
+}
+
+header .mainBar a {
+  margin-top: 0.4%;
+  padding-right: 4ex;
+  float: right;
+  color: rgb(221, 221, 221);
+  font-weight: normal;
+  vertical-align: middle;
+  font-family: myFont;
+  /* height: 100%; */
+  font-size: 1.5vw;
+  text-align: right;
+  font-weight: bold;
+  transition: 0.25s cubic-bezier(.55, 1.75, .55, 1.65);
+}
+
+header .mainBar a:hover {
+  font-size: 1.8vw;
+  color: #e1dede
+}
+
+
+
+
+
+
+
