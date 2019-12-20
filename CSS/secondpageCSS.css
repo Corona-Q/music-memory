@@ -27,9 +27,8 @@
     background-repeat:no-repeat;/*图片适应窗口大小，这里设置的是不进行平铺*/
     background-origin: border-box;/*从边框区域显示*/
     background-position: 5%;
-    
 }
-header.main-bar {
+header.mainBar {
   position: absolute;
   vertical-align: middle;
   /* text-align: right; */
@@ -61,9 +60,22 @@ header .mainBar a:hover {
   color: #e1dede
 }
 
+.title-box{
+  font-size:80px;
+  color: white;
+  font-family: pangMen;
+  text-align: center;
+}
 
+.littleTitle{
+  font-size: 20px;
+  font-weight: 650;
+  text-align:center;
+}
 
-
-
+header{
+  background-color: rgba(0, 0, 0, 0.603);
+  height: 8%;
+}
 
 
