@@ -122,7 +122,19 @@ td{
     left: 5px;
 
 }
-#registerForm_01{
+#registerName{
+    height: 30px;
+    width: 240px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+#registerNumber{
+    height: 30px;
+    width: 240px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+#file{
     height: 30px;
     width: 240px;
     border: 2px solid #ccc;

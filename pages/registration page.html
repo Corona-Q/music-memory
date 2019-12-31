@@ -16,8 +16,8 @@
 </head>
 <body background="/image/图片1.png" style="background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;">                    
      <div class="register-box transparent">
-         <form action="/register.asp" method="POST" onsubmit="return checkForm(this);">
-             <table frame="box" border="0">                                                                                                                                                   
+         <form name="tijiao" action="winford.top" method="post" onsubmit="return check()">
+             <table frame="box" border="1">                                                                                                                                                   
                  <th class="title-box">
                      用 户 注 册
                  </th>
@@ -29,18 +29,20 @@
                          </div>
                      </td>
                      <td>
-                         <label class="registerNameBox" ><span class="require">*</span> 姓名 :</label>
+                         <label class="registerNameBox"><span class="require">*</span> 姓名 :</label>
                      </td>
                      <td style="text-align: left;margin-top: 1px;">
-                         <input id="registerForm_01" type="text" name="registerName" placeholder="请输入您的姓名" required/>
+                         <input id="registerName" type="text" name="registerName" placeholder="请输入您的姓名" onblur="check()">
+                         <span id="div1">*(为必填)</span>
                      </td>
                  </tr>
                  <tr>
                      <td>
-                         <label class="registerNameBox"><span class="require">*</span> 账号 :</label>
+                         <label class="registerNameBox"><span class="require">*</span> 学号 :</label>
                      </td>
                      <td style="text-align: left;">
-                         <input id="registerForm_01" type="text" name="registerNumber" value="quchenhui" placeholder="请输入您的账号，默认为学号">
+                         <input id="registerNumber" type="text" name="registerNumber" placeholder="请输入您的学号" onblur="check()">
+                         <span id="div4">*(为必填)</span>
                      </td>
                  </tr>
              
@@ -49,17 +51,19 @@
                          <label class="registerNameBox"><span class="require">*</span> 密码 :</label>
                      </td>
                      <td style="text-align: left;">
-                         <input id="password" type="password" name="registerPassword" placeholder="请输入您的密码">
+                         <input id="password" type="password" name="registerPassword" placeholder="请输入您的密码" onblur="check()">
+                         <span id="div2">*(为必填)</span>
                      </td>
                  </tr>
                  <tr>
                      <td>
                      </td>
                      <td>
-                         <label class="registerNameBox"><span class="require">*</span> 密码确认 :</label><span id="concentration"></span>
+                         <label class="registerNameBox"><span class="require">*</span> 密码确认 :</label> 
                      </td>
                      <td style="text-align: left;">
-                         <input id="passwordConfirm" type="password" name="registerPasswordConfirm" placeholder="请再次输入您的密码">
+                         <input id="passwordConfirm" type="password" name="registerPasswordConfirm" placeholder="请再次输入您的密码" onblur="check()">
+                         <span id="div3">*(为必填)</span>
                      </td>
                  </tr>
                  <tr>
@@ -70,8 +74,8 @@
                      </td>
                      <td style="text-align: left;">
                          <input type="radio" name="registerGender" value="女" checked="checked" />女
-                         <input type="radio" name="registerGender" value="男" />男
-                     </td>
+                         <input type="radio" name="registerGender" value="男" />男&nbsp&nbsp&nbsp
+                         <span id="div5">*(为必填)</span>
                  </tr>
                  <tr>
                      <td></td>
@@ -104,7 +108,7 @@
                          <label class="registerNameBox"><span class="require">*</span> 文件上传 :</label>
                      </td>
                      <td style="text-align: left;">
-                         <input id="registerForm_01" type="file" name="registerFileUpload">
+                         <input id="file" type="file" name="registerFileUpload">
                      </td>
                  </tr>
                  <tr>
@@ -133,5 +137,6 @@
          </form>
      </div>
 </body>
-<script src="JS\registerJS.js"></script>
+<script src="../JS/registerJS.js">
+</script>
 </html>

@@ -120,3 +120,56 @@ img{display: block;}
 .dh ul li.curr .layer .p2{left: 10px;} */
 .col1{color: #00A39A;}
 .col2{color: #fff;}
+
+
+.A {
+  width: 1200px;
+  height: 418px;
+  background-color: #fff;
+}
+.a{
+  width: 1200px;
+  height: 418px;
+}
+.a11{
+  width: 500px;
+  height: 114px;
+  margin-left: 540px;
+  margin-top: 80px;
+}
+.a11 h2{
+  font-weight: bold;
+}
+.a111{
+  display: block;/*行转块，可有高宽*/
+  width: 196px;
+  height: 40px;
+}
+.a12{
+  width: 1220px;
+  height: 246px;
+  margin-left: 23px;
+}
+.a121 img:hover{
+  /*渐变效果：在0.5S内向上移五个像素*/
+  -webkit-transition:margin-top 0.5s;
+  /*上外边距*/
+  margin-top: -5px;
+  /*阴影:水平阴影  垂直阴影  模糊距离  阴影颜色*/
+  box-shadow: 0 10px 30px aqua;
+}
+.a122 img:hover{
+  -webkit-transition:margin-top 0.5s;
+  margin-top: -5px;
+  box-shadow: 0 10px 30px rgb(130, 255, 114);
+}
+.a12 img{
+  width: 590px;
+  height: 236px;
+}
+.a121 img{
+  float: left;
+}
+.a122 img{
+  float: right;
+}
