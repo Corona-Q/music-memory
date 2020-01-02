@@ -1,39 +1,51 @@
-<html>
-<head>
-<title>adoinsert</title>
-</head>
-<body>
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<%Session.CodePage = 65001%>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <%
+tmpno=request.form("regNo")
+tmpname=request.form("regName")
+tmppass=request.form("regPasswordC")
+tmpsex=request.form("regGender")
 
-tmpseq=ucase(trim(request.form("txtseq")))
-tmpsubject=trim(request.form("txtsubject"))
-tmppublisher=trim(request.form("txtpublisher"))
-tmpprice=trim(request.form("txtprice"))
- 
- '构造Insert命令的字符串
-strinsert="insert into course(seq,subject,publisher,price)"
-strinsert=strinsert&"values('"&tmpseq&"','"&tmpsubject&"','"&tmppublisher&"',"&tmpprice&")"
 
-'建立并打开connection对象
-'strconn="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Server.MapPath("course.mdb")
-strconn="driver={microsoft access driver (*.mdb)};dbq="&server.mappath("course.mdb")
-set conn=server.createobject("adodb.connection")
-conn.open strconn
+'tmplove=request.form("registerLove")
 
-conn.execute strinsert
+tmplove=""
+For I=1 to Request.form("registerLove").Count
+   tmplove=tmplove&Request.form("registerLove")(I)&"," 
+Next
 
-response.write "记录添加成功!"
-conn.close
-set conn=nothing
+m=len(tmplove)
+tmplove=left(tmplove,m-1)
+
+tmpclass=request.form("regClass")
+tmpself=request.form("regText")
+
+set cn=server.createobject("adodb.connection")
+strconn="driver={microsoft access driver (*.mdb)};dbq="&server.mappath("reg.mdb")
+cn.open strconn
+
+set rs=server.createobject("adodb.recordset")
+selstr="select * from useinfo where stuno='" & tmpno & "'"
+rs.open selstr,cn
+
+
+if not (rs.eof) then
+response.write "<script language=JavaScript>" & "alert('该账号已被占用，请重新选择账号！');" & "history.back();" & "</script>"
+rs.close
+set rs=nothing
+cn.close
+set cn=nothing
+else
+
+set cn=server.createobject("adodb.connection")
+strconn="driver={microsoft access driver (*.mdb)};dbq="&server.mappath("reg.mdb")
+cn.open strconn
+
+  strin= "insert into useinfo(stuno,stuna,stup,stus,stul,stuc,stuself)"
+  strin=strin&"values('"&tmpno&"','"&tmpname&"','"&tmppass&"','"&tmpsex&"','"&tmplove&"','"&tmpclass&"','"&tmpself&"')"
+  cn.execute  strin
+  response.write "<script language=JavaScript>" & "alert('注册成功！');" & "history.back();" & "</script>" 
+
+  end if
 %>
-<%'response.write "<script language=JavaScript>" 
-   'response.write "alert('用户信息录入成功！');"
-  ' response.write "history.back()" 
-   'response.write "</script>"
-%>
-<br>
-请
-<a href=insert.htm>按此处</a>输入下一条记录
-</body>
-
-</html>

@@ -1,5 +1,7 @@
 
-        /*function checkForm(form) {
+
+        /*
+        function checkForm(form) {
             if(form.registerName.value == "") {
                 alert("错误：用户名不能为空！");
                 form.registerName.focus();
@@ -169,15 +171,17 @@ var input1 = document.getElementById("upload");
                 document.tijiao.registerName.select(); 
                 return false; 
             } 
-                var charname1 = name1.toLowerCase(); 
-                for (var i = 0; i < name1.length; i++) { 
-                var charname = charname1.charAt(i); 
-                if (!(charname >= 0 && charname <= 9) && (!(charname >= 'a' && charname <= 'z')) && (charname != '_')) { 
-                    div.innerHTML = "用户名包含非法字符"; 
-                    document.form1.registerName.select(); 
-                    return false; 
-                } 
+            var chinese = /[\u4E00-\u9FA5]/;//正则表达式
+            var charname1 = name1.toLowerCase(); 
+            for (var i = 0; i < name1.length; i++) { 
+            var charname = charname1.charAt(i); 
+            if (!charname.match(chinese)) { 
+                div.innerHTML = "用户名包含非法字符"; 
+                document.form1.registerName.select(); 
+                return false; 
             } 
+        } 
+
                 return true;
         }
 
@@ -235,13 +239,12 @@ function checkstuno(){
     var id1 = stuno.toLowerCase(); 
     for (var i = 0; i < stuno.length; i++) { 
     var id = id1.charAt(i); 
-    if (!(id >= 0 && id <= 9) && (!(id >= 'a' && id <= 'z')) && (id != '_')) { 
-        div.innerHTML = "用户名包含非法字符"; 
+    if (!(id >= 0 && id <= 9)) { 
+        div.innerHTML = "学号包含非法字符！"; 
         document.form1.registerNumber.select(); 
         return false; 
     } 
 } 
-    return true;
 }
 
 
@@ -257,16 +260,11 @@ function checksex(){
 	  return true;
 }
 
-function checkdept(){
-	if (document.tijiao.registerClass.selectedIndex==0){
-		alert("请选择院系");
-		return false;
-	}
-	    return true;
-}
 
 function checklove()
   {
+    var div = document.getElementById("div6"); 
+    div.innerHTML = ""; 
     c=0;
 	for (var i=0;i<document.tijiao.registerLove.length;i++)
      {
@@ -274,12 +272,11 @@ function checklove()
       c++;
      }
 	if (c==0){
-	    alert("请选择个人爱好");
+	    div.innerHTML = "必须选择爱好！"; 
 		return false;
 	}
 	    return true;
 }
-
 
             function check(){ 
             if (checkname() && checkstuno() &&  checkpassword() && checkrepassword() && checksex()&&checklove()&&checkdept() ) { 

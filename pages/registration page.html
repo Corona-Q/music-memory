@@ -4,36 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/CSS/registerCSS.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../CSS/registerCSS.css" media="screen" type="text/css"/>
     <link href="../image/icon4.ico" rel="icon" type="image/x-ico" />
-    <!--<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
 
     <title>用户注册</title>
     
 </head>
-<body background="/image/图片1.png" style="background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;">                    
+<body background="../image/图片1.png" style="background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;">                    
      <div class="register-box transparent">
-         <form name="tijiao" action="winford.top" method="post" onsubmit="return check()">
-             <table frame="box" border="1">                                                                                                                                                   
+         <form name="tijiao" action="registration page.asp" method="post" onsubmit="return check()">
+             <table frame="box" border="0">                                                                                                                                                   
                  <th class="title-box">
                      用 户 注 册
                  </th>
                  <tr>
-                     <td rowspan="3" style="width: 210px;">
-                         <div class="con4">
-                             <canvas id="cvs" width="170px" height="200px"></canvas>
-                             <span class="btn upload">上 传 头 像<input type="file" class="upload_pic" id="upload" /></span>
-                         </div>
-                     </td>
                      <td>
                          <label class="registerNameBox"><span class="require">*</span> 姓名 :</label>
                      </td>
                      <td style="text-align: left;margin-top: 1px;">
-                         <input id="registerName" type="text" name="registerName" placeholder="请输入您的姓名" onblur="check()">
-                         <span id="div1">*(为必填)</span>
+                         <input id="registerName" type="text" name="regName" placeholder="请输入您的姓名" onblur="check()">
+                         <br><span id="div1"></span>
                      </td>
                  </tr>
                  <tr>
@@ -41,8 +31,8 @@
                          <label class="registerNameBox"><span class="require">*</span> 学号 :</label>
                      </td>
                      <td style="text-align: left;">
-                         <input id="registerNumber" type="text" name="registerNumber" placeholder="请输入您的学号" onblur="check()">
-                         <span id="div4">*(为必填)</span>
+                         <input id="registerNumber" type="text" name="regNo" placeholder="请输入您的学号" onblur="check()">
+                         <br><span id="div4"></span>
                      </td>
                  </tr>
              
@@ -51,34 +41,29 @@
                          <label class="registerNameBox"><span class="require">*</span> 密码 :</label>
                      </td>
                      <td style="text-align: left;">
-                         <input id="password" type="password" name="registerPassword" placeholder="请输入您的密码" onblur="check()">
-                         <span id="div2">*(为必填)</span>
+                         <input id="password" type="password" name="regPassword" placeholder="请输入您的密码" onblur="check()">
+                         <br><span id="div2"></span>
                      </td>
                  </tr>
                  <tr>
-                     <td>
-                     </td>
                      <td>
                          <label class="registerNameBox"><span class="require">*</span> 密码确认 :</label> 
                      </td>
                      <td style="text-align: left;">
-                         <input id="passwordConfirm" type="password" name="registerPasswordConfirm" placeholder="请再次输入您的密码" onblur="check()">
-                         <span id="div3">*(为必填)</span>
+                         <input id="passwordConfirm" type="password" name="regPasswordC" placeholder="请再次输入您的密码" onblur="check()">
+                         <br><span id="div3"></span>
                      </td>
                  </tr>
                  <tr>
-                     <td>
-                     </td>
                      <td>
                          <label class="registerNameBox"><span class="require">*</span> 性别 :</label>
                      </td>
                      <td style="text-align: left;">
-                         <input type="radio" name="registerGender" value="女" checked="checked" />女
-                         <input type="radio" name="registerGender" value="男" />男&nbsp&nbsp&nbsp
-                         <span id="div5">*(为必填)</span>
+                         <input type="radio" name="regGender" value="女" checked="checked" />女
+                         <input type="radio" name="regGender" value="男" />男&nbsp&nbsp&nbsp
+                         <br><span id="div5"></span>
                  </tr>
                  <tr>
-                     <td></td>
                      <td>
                          <label class="registerNameBox"><span class="require">*</span> 爱好 :</label>
                      </td>
@@ -87,15 +72,15 @@
                        <input type="checkbox" name="registerLove" value="跳舞">跳舞&nbsp;
                        <input type="checkbox" name="registerLove" value="爬山">爬山&nbsp;
                        <input type="checkbox" name="registerLove" value="玩游戏">玩游戏
+                       <br><span id="div6"></span>
                      </td>
                  </tr>
                  <tr>
-                     <td></td>
                      <td>
                          <label class="registerNameBox"><span class="require">*</span> 专业班级 :</label>
                      </td>
                      <td style="text-align: left;">
-                         <select id="registerForm_02" name="registerClass">
+                         <select id="registerForm_02" name="regClass">
                              <option value="信管1802">信管1802</option>
                              <option value="信管1801" selected>信管1801</option>
                              <option value="信管1803">信管1803</option>
@@ -103,7 +88,6 @@
                      </td>
                  </tr>
                  <tr>
-                     <td></td>
                      <td>
                          <label class="registerNameBox"><span class="require">*</span> 文件上传 :</label>
                      </td>
@@ -112,16 +96,14 @@
                      </td>
                  </tr>
                  <tr>
-                     <td></td>
                      <td>
                          <label class="registerNameBox"><span class="require">*</span> 个性签名 :</label>
                      </td>
                      <td style="text-align-last: left;">
-                         <textarea style="border: 2px solid #ccc;border-radius: 5px;" name="registerTextarea" value="" rows="3" cols="26"></textarea>
+                         <textarea style="border: 2px solid #ccc;border-radius: 5px;" name="regText" value="" rows="3" cols="26"></textarea>
                      </td>
                  </tr>
                  <tr>
-                     <td></td>
                      <td style="text-align: right;">
                          <div style="margin-right: 40px;">
                              <input id="submit-button" type="submit" name="registerSubmit" value="确认">
