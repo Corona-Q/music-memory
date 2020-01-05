@@ -22,7 +22,7 @@
                          <label class="registerNameBox"><span class="require">*</span> 姓名 :</label>
                      </td>
                      <td style="text-align: left;margin-top: 1px;">
-                         <input id="registerName" type="text" name="regName" placeholder="请输入您的姓名" onblur="check()">
+                         <input id="registerName" type="text" name="regName" placeholder="请输入您的姓名" onblur="checkname()">
                          <br><span id="div1"></span>
                      </td>
                  </tr>
@@ -31,7 +31,7 @@
                          <label class="registerNameBox"><span class="require">*</span> 学号 :</label>
                      </td>
                      <td style="text-align: left;">
-                         <input id="registerNumber" type="text" name="regNo" placeholder="请输入您的学号" onblur="check()">
+                         <input id="registerNumber" type="text" name="regNo" placeholder="请输入您的学号" onblur="checkstuno()">
                          <br><span id="div4"></span>
                      </td>
                  </tr>
@@ -41,7 +41,7 @@
                          <label class="registerNameBox"><span class="require">*</span> 密码 :</label>
                      </td>
                      <td style="text-align: left;">
-                         <input id="password" type="password" name="regPassword" placeholder="请输入您的密码" onblur="check()">
+                         <input id="password" type="password" name="regPassword" placeholder="请输入您的密码" onblur="checkpassword()">
                          <br><span id="div2"></span>
                      </td>
                  </tr>
@@ -50,7 +50,7 @@
                          <label class="registerNameBox"><span class="require">*</span> 密码确认 :</label> 
                      </td>
                      <td style="text-align: left;">
-                         <input id="passwordConfirm" type="password" name="regPasswordC" placeholder="请再次输入您的密码" onblur="check()">
+                         <input id="passwordConfirm" type="password" name="regPasswordC" placeholder="请再次输入您的密码" onblur="checkrepassword()">
                          <br><span id="div3"></span>
                      </td>
                  </tr>
@@ -61,18 +61,16 @@
                      <td style="text-align: left;">
                          <input type="radio" name="regGender" value="女" checked="checked" />女
                          <input type="radio" name="regGender" value="男" />男&nbsp&nbsp&nbsp
-                         <br><span id="div5"></span>
                  </tr>
                  <tr>
                      <td>
                          <label class="registerNameBox"><span class="require">*</span> 爱好 :</label>
                      </td>
-                     <td style="text-align: left;">
+                     <td style="text-align: left;font-size: 19px;">
                        <input type="checkbox" name="registerLove" value="唱歌">唱歌&nbsp;
                        <input type="checkbox" name="registerLove" value="跳舞">跳舞&nbsp;
                        <input type="checkbox" name="registerLove" value="爬山">爬山&nbsp;
                        <input type="checkbox" name="registerLove" value="玩游戏">玩游戏
-                       <br><span id="div6"></span>
                      </td>
                  </tr>
                  <tr>
@@ -106,7 +104,7 @@
                  <tr>
                      <td style="text-align: right;">
                          <div style="margin-right: 40px;">
-                             <input id="submit-button" type="submit" name="registerSubmit" value="确认">
+                             <input id="submit-button" type="submit" name="registerSubmit" value="确认" onclick="return">
                          </div>
                      </td>
                      <td style="text-align: left;">

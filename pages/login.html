@@ -11,11 +11,11 @@
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <title>用户注册</title>
+    <title>用户登录</title>
     
 </head>
 <body background="../image/图片1.png" style="background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;">
-    <form>
+    <form id="form1" name="form1" method="post" action="login.asp">
         <div class="container register-box transparent"  style="height: 450px; width: 680px;">
             <div class="row">
                     <span class="title-box" style="left: 30px;top: 10px;">登 录</span>
@@ -23,11 +23,11 @@
             <div class="row" style="margin-top: 90px;">
                 <div class="col-md-5 font" style="text-align: right;">
                     <br>
-                    学号：
+                    姓名：
                 </div>
                 <div class="col-md-7" style="margin-top: 25px;">
                     <br>
-                    <input id="registerNumber" style="height: 33px;" type="text" name="regNo" placeholder="请输入您的学号">
+                    <input id="registerName" type="text" name="username" placeholder="请输入您的姓名">
                 </div>
             </div>
             <div class="row" style="margin-top: 70px;">
@@ -35,7 +35,7 @@
                     密码：
                 </div>
                 <div class="col-md-7" style="margin-top: 8px;">
-                    <input id="registerNumber" style="height: 33px;" type="password" name="regNo" placeholder="请输入您的密码">
+                    <input id="password" type="password" name="password" placeholder="请输入您的密码">
                 </div>
             </div>
             <div class="row" style="margin-top: 60px;">

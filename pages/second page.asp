@@ -25,22 +25,27 @@
 </head>
 <header>
     <div class="mainBar">
-        <a class=" toolbar" href="login.html" style="text-decoration: none; padding-top: 10px;">登录</a>
-        <a class=" toolbar" href="registration page.html" style="text-decoration: none; padding-top: 10px;">注册</a>
+       <!-- <a class=" toolbar" href="login.html" style="text-decoration: none; padding-top: 10px;">登录</a>
+        <a class=" toolbar" href="registration page.html" style="text-decoration: none; padding-top: 10px;">注册</a>-->
+
+    <a href="exit.asp">退出登录</a>
     </div>
 </header>
 <body>
-    
+
     <div class="jumbotron background" style="margin-bottom:0; height: 380px;">
         <div class="row">
             <div class="col-sm-1">
-
+                
             </div>
             <div class="col-sm-10 ">
                 <p class="title-box">开启音乐的世界</p>
             </div>
             <div class="col-sm-1">
-
+                <div style="margin-left:-110px;margin-top:-58px; color:white">
+                    <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+                    <%Response.Write("您好，"+Session.Contents("username"))%>
+                </div>
             </div>
         </div>
     </div>

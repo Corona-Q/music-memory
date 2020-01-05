@@ -1,7 +1,7 @@
-/*@font-face{
-  font-family: pangMen;
-  src: url(/fonts/pangmen-title.ttf);
-}*/
+@font-face{
+  font-family: pang;
+  src: url(../fonts/pangmen-title.ttf);
+}
 @font-face{
   font-family: pangMen;
   src: url(../fonts/pangmen-cu.ttf);
@@ -25,14 +25,13 @@
   margin-left: -8px;
   margin-right: -8px;
   width: 101.1%;
-  
  
 }
 #title{
-font-size: 1400%;
+font-size: 170px;
 color: #FFD33C;
 margin-top: 80%;
-margin-left: 14%;
+margin-left: -500px;
 font-family: pangMen;
 }
 
@@ -65,7 +64,6 @@ header.mainBar {
 
 }
 
-  
   /*neeeeoooon*/
   
   a{
@@ -73,16 +71,22 @@ header.mainBar {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
+    margin-left: -360px;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: pang;
   }
 
   p:nth-child(1) a{
     color: gray;     
-    font-family: openFont;
+    font-family: pang; 
+    text-decoration: none;
   }
   p:nth-child(1) a:hover{
     -webkit-animation: neon1 1s ease-in-out infinite alternate;
     -moz-animation: neon1 1s ease-in-out infinite alternate;
     animation: neon1 1s ease-in-out infinite alternate;
+
   }
 
   p a:hover{
