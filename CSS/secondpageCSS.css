@@ -28,40 +28,26 @@
     background-origin: border-box;/*从边框区域显示*/
     background-position: 5%;
 }
-header.mainBar {
-  position: absolute;
-  vertical-align: middle;
-  /* text-align: right; */
-  /* background-color: rgba(147, 82, 204, 0.747); */
-  padding-top: 1%;
-  /* padding-left: 40%; */
-  width: 55ex;
-  height: 4ex;
-  /* align-items: flex-end; */
-}
 
-header .mainBar a {
-  margin-top: 0.4%;
-  padding-right: 4ex;
+.aBox{
+margin-top: 0.3px;
   float: right;
   color: rgb(221, 221, 221);
   font-weight: normal;
-  vertical-align: middle;
-  font-family: myFont;
+
   /* height: 100%; */
   font-size: 1.5vw;
-  text-align: right;
+
   font-weight: bold;
   transition: 0.25s cubic-bezier(.55, 1.75, .55, 1.65);
 }
-
-header .mainBar a:hover {
-  font-size: 1.8vw;
-  color: #e1dede
+.aBox:hover {
+  color: #e1dede;
+  font-size: 1.6vw;
 }
 
 .title-box{
-  font-size:80px;
+  font-size:100px;
   color: white;
   font-family: pangMen;
   text-align: center;
@@ -102,26 +88,6 @@ header .mainBar a:hover {
   height: 200px;
 }
 
-ul li,ul ol{list-style: none;}
-i,b,em,strong{font-style: normal;}
-body{font-family: '微软雅黑';}
-img{display: block;}
-
-.dh ul{position: relative;overflow: hidden;width: 1300px;height: 446px;margin: 0px 0 0 -40px;}
-.dh ul li{float: left;width: 80px;overflow: hidden;height: 100%;position: relative;cursor: pointer;}
-.dh ul li a{display: block;width: 100%;height: 100%;}
-.dh ul li .layer{position: absolute;bottom: 0;left: 0;width: 100%;background:rgba(27,29,36,0.75);height: 100%;}
-.dh ul li .layer .p1{position: absolute;bottom: 5px;left: 10px;}
-.dh ul li .layer .p2{position: absolute;bottom: 5px;right: -200%;}
-.dh ul li .layer .p2 b,.dh ul li .layer .p2 span{display: block;font-weight: bold;font-size: 20px;}
-.dh ul li .layer .p1 b,.dh ul li .layer .p1 span{display: block;font-weight: bold;font-size: 14px;}
-.dh ul li.curr{}
-/*.dh ul li.curr .layer .p1{left: -200%;}
-.dh ul li.curr .layer .p2{left: 10px;} */
-.col1{color: #00A39A;}
-.col2{color: #fff;}
-
-
 .A {
   width: 1200px;
   height: 418px;
@@ -142,7 +108,7 @@ img{display: block;}
 }
 .a111{
   display: block;/*行转块，可有高宽*/
-  width: 196px;
+  width: 250px;
   height: 40px;
 }
 .a12{
@@ -157,6 +123,10 @@ img{display: block;}
   margin-top: -5px;
   /*阴影:水平阴影  垂直阴影  模糊距离  阴影颜色*/
   box-shadow: 0 10px 30px aqua;
+}
+.a121a img:hover{
+  /*阴影:水平阴影  垂直阴影  模糊距离  阴影颜色*/
+  box-shadow: 0 10px 30px #ffd33c;
 }
 .a122 img:hover{
   -webkit-transition:margin-top 0.5s;

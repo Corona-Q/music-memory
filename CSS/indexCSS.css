@@ -16,7 +16,7 @@
 }
 #footer{
   color: rgb(187, 59, 59);
-  background-color:gray;
+  background-color:rgb(180, 180, 180);
   border:0px;
   font-size: 120%;
   align-content: center;
@@ -98,21 +98,21 @@ header.mainBar {
       text-shadow: 0 0 10px #fff,
                  0 0 20px #fff,
                  0 0 30px #fff,
-                 0 0 40px #ff00de,
-                 0 0 70px #ff00de,
-                 0 0 80px #ff00de,
-                 0 0 100px #ff00de,
-                 0 0 150px #ff00de;
+                 0 0 40px #ffd33c,
+                 0 0 70px #ffd33c,
+                 0 0 80px #ffd33c,
+                 0 0 100px #ffd33c,
+                 0 0 150px #ffd33c;
     }
     to {
       text-shadow: 0 0 5px #fff,
                  0 0 10px #fff,
                  0 0 15px #fff,
-                 0 0 20px #ff00de,
-                 0 0 35px #ff00de,
-                 0 0 40px #ff00de,
-                 0 0 50px #ff00de,
-                 0 0 75px #ff00de;
+                 0 0 20px #ffd33c,
+                 0 0 35px #ffd33c,
+                 0 0 40px #ffd33c,
+                 0 0 50px #ffd33c,
+                 0 0 75px #ffd33c;
     }
   }
   
@@ -122,21 +122,21 @@ header.mainBar {
       text-shadow: 0 0 10px #fff,
                  0 0 20px #fff,
                  0 0 30px #fff,
-                 0 0 40px #ff00de,
-                 0 0 70px #ff00de,
-                 0 0 80px #ff00de,
-                 0 0 100px #ff00de,
-                 0 0 150px #ff00de;
+                 0 0 40px #ffd33c,
+                 0 0 70px #ffd33c,
+                 0 0 80px #ffd33c,
+                 0 0 100px #ffd33c,
+                 0 0 150px #ffd33c;
     }
     to {
       text-shadow: 0 0 5px #fff,
                  0 0 10px #fff,
                  0 0 15px #fff,
-                 0 0 20px #ff00de,
-                 0 0 35px #ff00de,
-                 0 0 40px #ff00de,
-                 0 0 50px #ff00de,
-                 0 0 75px #ff00de;
+                 0 0 20px #ffd33c,
+                 0 0 35px #ffd33c,
+                 0 0 40px #ffd33c,
+                 0 0 50px #ffd33c,
+                 0 0 75px #ffd33c;
     }
   }
   
@@ -146,21 +146,21 @@ header.mainBar {
       text-shadow: 0 0 10px #fff,
                  0 0 20px #fff,
                  0 0 30px #fff,
-                 0 0 40px #ff00de,
-                 0 0 70px #ff00de,
-                 0 0 80px #ff00de,
-                 0 0 100px #ff00de,
-                 0 0 150px #ff00de;
+                 0 0 40px #ffd33c,
+                 0 0 70px #ffd33c,
+                 0 0 80px #ffd33c,
+                 0 0 100px #ffd33c,
+                 0 0 150px #ffd33c;
     }
     to {
       text-shadow: 0 0 5px #fff,
                  0 0 10px #fff,
                  0 0 15px #fff,
-                 0 0 20px #ff00de,
-                 0 0 35px #ff00de,
-                 0 0 40px #ff00de,
-                 0 0 50px #ff00de,
-                 0 0 75px #ff00de;
+                 0 0 20px #ffd33c,
+                 0 0 35px #ffd33c,
+                 0 0 40px #ffd33c,
+                 0 0 50px #ffd33c,
+                 0 0 75px #ffd33c;
     }
   }
   

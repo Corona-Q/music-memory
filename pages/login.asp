@@ -16,7 +16,6 @@ password=Request.Form("password")
 %>
 <%
 db="reg.mdb"
-'连接数据库指定动作，这段必须独立地占用一个<％％>否则在某些情况下IE8会出错
 Set conn = Server.CreateObject("ADODB.Connection")
 conn.Open "driver={Microsoft Access Driver (*.mdb)};dbq=" & Server.MapPath(db) 
 %>
@@ -64,5 +63,5 @@ set rs=nothing
 conn.close
 set conn=nothing
 %>
-</body>
+</body>  
 </html>

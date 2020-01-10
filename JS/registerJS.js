@@ -97,23 +97,3 @@ return true;
             } 
                 return true; 
         }
-
-
-/*
-function checklove()
-  {
-    var div = document.getElementById("div6"); 
-    div.innerHTML = ""; 
-    c=0;
-	for (var i=0;i<document.tijiao.registerLove.length;i++)
-     {
-      if (document.tijiao.registerLove[i].checked==true)
-      c++;
-     }
-	if (c==0){
-	    div.innerHTML = "必须选择爱好！"; 
-		return false;
-	}
-	    return true;
-}
-*/
